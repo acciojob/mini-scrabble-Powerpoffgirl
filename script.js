@@ -2,6 +2,13 @@
 let text = document.getElementById('evaluatedText');
 let letterCount = document.getElementById('letterCount');
 
-function count(){
-    letterCount.innerText = text.value.length+1;
-}
+text.addEventListener('keyup',(e) => {
+    if(e.key !== "Escape"){
+        
+    }
+    let str = text.value;
+    letterCount.innerHTML = str.length;
+    console.log(str.length);
+})
+
+
